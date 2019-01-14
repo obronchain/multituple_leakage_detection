@@ -1,0 +1,37 @@
+###############################
+# Author: O. Bronchain        #
+# Date: June 2018             #
+# Institute: UCL CRYPTO GROUP #
+###############################
+
+REQUIREMENTS:
+ This code is written in Python3 and is mainly based on Numpy1.14 and Scipy1.1
+ running on a Linux distribution. The required packages are:
+    numpy
+    scipy
+    matplotlib
+    tqdm
+ These can be installed by running:
+    # sudo pip install numpy matplotlib tqdm scipy
+
+USAGE:
+ The code generates all the simulation-based figures of the paper and saves
+ two files for each figure. The .pdf is the actual figure and the .pkl contains
+ informations to generate the .pdf without running the simulation again. The code
+ is used as:
+    # python3 figures.py option
+ where option can be:
+    -fast  - reduced number of samples (no averaging)
+    -paper - plots from the paper
+    -file  - uses .pkl files and only generates plots
+ i.e:
+    # python3 figures.py fast
+
+FILES DESCRIPTION
+ benchmark.py measures the CPU time for detection algorithms.
+ beta_compute.py computes analytical \beta for detection methods.
+ figures.py contains all the code to generate the plots of the paper.
+ methods.py contains the actual detection methods.
+ sampled_experiments.py outputs the sampled experiments mainly for dependent noise issue.
+ settings.py initiates the plots settings.
+ utils.py contains some useful functions.

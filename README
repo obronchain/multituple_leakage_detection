@@ -3,6 +3,7 @@
 # Date: June 2018             #
 # Institute: UCL CRYPTO GROUP #
 ###############################
+TCHES 2019 paper link: https://tches.iacr.org/index.php/TCHES/article/view/7394
 
 REQUIREMENTS:
  This code is written in Python3 and is mainly based on Numpy1.14 and Scipy1.1
